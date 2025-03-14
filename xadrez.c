@@ -33,5 +33,23 @@ int main() {
     i++;
     }while (i < 8);
 
+    printf("\n"); //separação
+
+    //Movimento do Cavalo ( usando loops aninhados )
+    printf("Movimento do Cavalo: \n");
+
+    //primeiro loop para mover para baixo
+    for (i = 0; i < 2; i++ ) {
+        printf("Baixo\n");
+
+    //segundo loop move 1 para esquerda
+    if ( i == 1) { //if para executar o while apenas quando apresentar duas casas para baixo
+    j = 0;
+    while (j < 1) {
+        printf("Esquerda\n");
+    j++;
+        }
+    }
+}
     return 0;
 }
